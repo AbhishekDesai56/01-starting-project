@@ -8,10 +8,10 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './user-input.component.css',
 })
 export class UserInputComponent {
-  // @Input() initialInvestment!: Number;
-  // @Input() annualInvestment!: Number;
-  // @Input() expectedReturn!: Number;
-  // @Input() duration!: Number;
+  @Input() initialInvestment!: Number;
+  @Input() annualInvestment!: Number;
+  @Input() expectedReturn!: Number;
+  @Input() duration!: Number;
   @Output() outputAnnualReturn = new EventEmitter<{
     year: number;
     interest: number;

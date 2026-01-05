@@ -13,10 +13,10 @@
     {
         <tr>
             <td>{{ investResult.year }}</td>
-            <td>{{ investResult.valueEndOfYear }}</td>
-            <td>{{ investResult.interest }}</td>
-            <td>{{ investResult.totalAmountInvested }}</td>
-            <td>{{ investResult.totalAmountInvested }}</td>
+            <td>{{ investResult.valueEndOfYear | currency: 'INR': 'symbol': '1.2-2'}}</td>
+            <td>{{ investResult.interest | number: '1.2-2' }}</td>
+            <td>{{ investResult.totalInterest | number: '1.2-2'  }}</td>
+            <td>{{ investResult.totalAmountInvested | number: '1.2-2'  }}</td>
         </tr>
     }
   </tbody>
